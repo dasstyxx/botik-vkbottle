@@ -1,5 +1,6 @@
 from vkbottle.dispatch.rules.base import GeoRule
 
+from botik.input.message_handlers.events import events
 from botik.input.message_handlers.raw_message_handlers import RawMessageHandlers
 
 
@@ -29,4 +30,4 @@ class RawMessageHandlers(RawMessageHandlers):
         location = message.geo
 
         await user.storage.set("location", location)
-        await self.events.geo_share(user, location)
+        await events.geo_share(user, location)
