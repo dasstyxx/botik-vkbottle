@@ -18,7 +18,7 @@ class VkApp(App):
         self.message_handlers = RawMessageHandlers(bot, start_callback, self.user_input)
 
     def initialize(self):
-        api = VKApi(self.raw_api)
+        api = VKApi(self.bot, self.raw_api)
         set_api(api)
 
         self._page_fac: PageFactory = VkPageFactory()

@@ -4,7 +4,8 @@ from botik_vkbottle.api.send_message import VkSendMessage
 
 
 class VKApi(Api):
-    def __init__(self, raw_api):
+    def __init__(self, bot, raw_api):
+        self.bot = bot
         self.raw_api = raw_api
         self.msg = VkSendMessage(raw_api)
         self.api_type = VkApiType()
