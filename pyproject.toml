@@ -2,7 +2,7 @@
 name = "botik-vkbottle"
 version = "0.0.1"
 authors = [
-  { name="dasstyx", email="dasstyx@example.com" },
+    { name = "dasstyx", email = "dasstyx@gmail.com" },
 ]
 description = "Extension for Botik to support VKBottle"
 requires-python = ">=3.7"
