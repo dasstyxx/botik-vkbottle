@@ -21,6 +21,10 @@ keywords = [
     "botik",
 ]
 
+dependencies = [
+    "vkbottle==4.3.10"
+]
+
 [project.urls]
 "Homepage" = "https://github.com/dasstyx/botik-vkbottle"
 "Bug Tracker" = "https://github.com/dasstyx/botik-vkbottle/issues"
